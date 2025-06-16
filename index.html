@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <title>Monetag Auto Impression</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f4f4f4;
+      padding: 50px;
+    }
+    h1 {
+      color: #2c3e50;
+    }
+    p {
+      font-size: 18px;
+    }
+    .status {
+      margin-top: 30px;
+      color: green;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>🔁 Monetag Auto Impression চলছে</h1>
+  <p>এই পেইজটি ওপেন রাখলেই আপনার ইনকাম হতে থাকবে।</p>
+  <p>প্রতি ৩০ সেকেন্ডে একটি নতুন ইম্প্রেশন পাঠানো হবে।</p>
+  <div class="status" id="status">ইম্প্রেশন শুরু হয়েছে...</div>
+
+  <script>
+    let count = 0;
+    const link = "https://otieu.com/4/9452506";
+
+    function sendImpression() {
+      window.open(link, "_blank");
+      count++;
+      document.getElementById("status").innerText = `✅ ${count} টি ইম্প্রেশন পাঠানো হয়েছে`;
+    }
+
+    setInterval(sendImpression, 30000);
+    setTimeout(sendImpression, 5000);
+  </script>
+</body>
+</html>
