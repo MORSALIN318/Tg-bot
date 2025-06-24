@@ -428,7 +428,7 @@ function exportPDF() {
 
   doc.setFontSize(16);
 
-  doc.text("Signal Report", 14, 20);
+  doc.text("Signal Report BY ABS TEAM OFFICIAL", 14, 20);
 
 
 
@@ -460,7 +460,7 @@ function exportPDF() {
 
       doc.setFontSize(6); // very small text
 
-      doc.text("@your_abs", 5, doc.internal.pageSize.getHeight() - 5); // 5px from left and bottom
+      doc.text("@update_abs", 5, doc.internal.pageSize.getHeight() - 5); // 5px from left and bottom
 
     }
 
@@ -468,7 +468,7 @@ function exportPDF() {
 
 
 
-  doc.save("signal_list @your_abs.pdf");
+  doc.save("signal_list @update_abs.pdf");
 
 }
 
